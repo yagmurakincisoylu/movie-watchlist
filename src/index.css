@@ -1,0 +1,266 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: #e5e5e5;
+  color: #22223b;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  min-height: auto;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+}
+
+.btn {
+  background-color: transparent;
+  display: flex;
+  border: none;
+  gap: 7px;
+  color: #22223b;
+  cursor: pointer;
+  padding: 5px;
+  justify-content: center;
+  font-size: .8rem;
+}
+
+.btn:hover,
+.btn:focus {
+  opacity: .5;
+}
+
+.container {
+  width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+}
+
+.bg-container {
+  background: #e5e5e5 url("../public/images/background.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 -30px;
+  background-size: cover;
+  opacity: 0.85;
+  position: absolute;
+  height: 200px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.content {
+  z-index: 1000;
+  position: relative;
+  width: 500px;
+  margin: 0 auto;
+}
+
+header .title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 200px;
+  color: #22223b;
+  
+}
+
+header a {
+  font-size: .75rem;
+  font-weight: 700;
+  padding: 1em;
+  background-color: rgba(193, 206, 212, 0.5);
+  border-radius: 5px;
+}
+
+header h1 {
+  text-shadow: 0 0 3px #b2b2d8;
+}
+
+
+header a:hover,
+header a:focus {
+  background-color: rgba(193, 206, 212, 0.3);
+}
+
+.search-form {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 182px;
+  display: flex;
+  width: 500px;
+  height: 36px;
+}
+
+.search-logo {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 10px;
+  top: 7.5px;
+  z-index: 100;
+}
+
+.search-form input {
+  padding: 1em;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  width: 75%;
+  font-family: inherit;
+  color: inherit;
+  text-indent: 2em;
+  outline: none;
+  border: 2px solid #22223b;
+  border-right: none;
+  color: #6f6f9e;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset;
+  -webkit-text-fill-color: #6f6f9e;
+
+}
+
+.search-form input::placeholder {
+  color: #9393b5;
+  font-family: inherit;
+}
+
+.search-form > #searchBtn {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  width: 25%;
+  font-family: inherit;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background-color: #e27e80;
+  cursor: pointer;
+  border: 2px solid #22223b;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+.search-form > #searchBtn:hover,
+.search-form > #searchBtn:focus {
+  background-color: #c95a5b;
+}
+
+.placeholder-container {
+  min-height: calc(100vh - 200px);
+  display: grid;
+  place-content: center;
+  font-weight: 700;
+  color: #d2d2e1;
+  font-size: 1rem;
+}
+
+.placeholder-container img {
+  justify-self: center;
+  margin-bottom: 10px;
+}
+
+.placeholder-container .btn {
+  justify-self: center;
+  font-weight: 700;
+  margin-top: 1em;
+  font-size: .9rem;
+}
+
+.warning-text {
+  width: 25ch;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.movie-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  margin-top: 1em;
+  border-bottom: 1.5px solid #e5e7eb;
+  padding-bottom: 1em;
+}
+
+.movie-container:first-of-type {
+  margin-top: 3.5em;
+}
+
+.movie-info {
+  padding: 1em;
+}
+
+.movie-title {
+  display: flex;
+  gap: 5px;
+}
+
+.movie-title h3 {
+  margin-right: 1em;
+}
+
+.movie-title img,
+.movie-title span {
+  align-self: center;
+}
+
+.movie-title span {
+  font-size: .75rem;
+}
+
+.movie-title img {
+  margin-left: auto;
+}
+
+.movie-category {
+  display: flex;
+  margin-block: .5em;
+  align-items: center;
+}
+
+.movie-category > p {
+  color: #111827;
+  font-size: .8rem;
+}
+
+.movie-category button {
+  margin-left: auto;
+}
+
+.movie-info > p {
+  font-size: .9rem;
+  font-weight: 400;
+  color: #6b7280;
+}
+
+.disabled {
+  opacity: 1;
+  cursor: not-allowed;
+}
+
+.disabled:hover {
+  opacity: 1;
+}
+
+
